@@ -1,0 +1,102 @@
+body {
+    background-image: url("https://blogin.co/uploads/images/medium/company-survey-howto2.jpg.pagespeed.ce.iDxnowfUUK.jpg");
+    background-size: cover; 
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    
+}
+  
+.please {
+    width: 80%;
+    background-color: #ffaf1a;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    font-family: Arial;
+    opacity: 0.9 
+}
+  
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+} 
+  
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+  
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+  
+fieldset:last-of-type {
+    border-bottom: none;
+}
+    
+label {
+    display: block;
+    margin: 0.5rem 0;
+} 
+  
+input, textarea {
+    background-color: #FAFAD2;
+    border: 1px solid #FAFAD2;
+} 
+  
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+} 
+  
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #FFD700;
+    border-color: #FFD700;
+    min-width: 300px;
+} 
+  
+.inline{
+    display: inline; 
+}
+  
+#name, #email, #number, #dropdown, #comment{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+  
+.inline{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+  
+input[type=checkbox] {
+    display: none;
+}
+  
+input[type=checkbox] + label:before {
+    content:"\2714";
+    border: 0.1em solid #000;
+    color: transparent;
+}
+  
+input[type=checkbox]:checked + label:before {
+    background-color: blue;
+    color: #ffff;
+    border-color: blue;  
+}

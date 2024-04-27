@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Survey Form</title> 
+    <link rel="stylesheet" href="styles.css"/>
+ </head>
+ <body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"><b>Big thanks for you if you kindly answer our survey for the future improvements</b></p>
+  <div class="please">
+    <form id="survey-form">
+     <!--<fieldset>-->
+     <!-- input name -->
+     <label for="name-label" id="name-label"><b>Your Name: </b> <input id="name" name="name-label" type="text" placeholder="John Victor" required/> </label>
+     <!-- input email -->
+     <label id="email-label" for="email-label"><b>Email: </b> <input id="email" name="email-label" type="email" placeholder="myMan13@email.com" required/> </label>
+     <!-- select age --> 
+     <label id="number-label" for="number-label"><b>Age: </b><input id="number" name="number-label" type="number" min="12" max="95" placeholder="old?"/> </label>
+     <!-- select one emotion --> 
+     <!--</fieldset>-->
+     <fieldset>
+      <label for="dropdown"> <b>How do you feel today?</b>
+        <select id="dropdown" name="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Happy</option>
+              <option value="2">Sad</option>
+              <option value="3">Angry</option>
+              <option value="4">Sick</option> 
+        </select>
+      </label> 
+     </fieldset>
+          <!-- select a gender --> 
+          <fieldset>
+            <legend><b>What is your gender?</b></legend>
+            <label for="male-gender"><input id="male-gender" type="radio" name="gender-type" class="inline" value="male" checked /> Male </label>
+            <label for="female-gender"><input id="female-gender" type="radio" name="gender-type" class="inline" value="female" /> Female </label>
+          </fieldset>
+          <!-- hobby --> 
+          <fieldset>
+            <p><b> What is your hobby? </b></p> 
+              <input class="swimming" id="hobby-1" type="checkbox"  name="hobby-1" value="swimming" /> 
+              <label for="hobby-1"> Swimming </label>       
+              <input class="games" id="hobby-2" type="checkbox"  name="hobby-2" value="games" /> 
+              <label for="hobby-2">Playing games</label>
+            
+              <input class="racing" id="hobby-3" type="checkbox"  name="hobby-3" value="racing" /> 
+              <label for="hobby-3">Racing</label>
+              <input class="drawing" id="hobby-4" type="checkbox"  name="hobby-4" value="drawing" /> 
+              <label for="hobby-4">Drawing</label>
+          </fieldset>
+          <!-- comments -->
+          <fieldset>
+            <label for="comment"> <b>Do you have any comments or sugestions?</b>
+              <textarea id="comment" name="comment" rows="4" cols="40" placeholder="Well, I suppose...."></textarea>
+            </label> 
+          </fieldset>
+          <!-- submit button --> 
+          <input id="submit" type="submit" id="Submit" /> 
+    </form>
+  </div>
+ </body>
+</html> 
