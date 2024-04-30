@@ -136,10 +136,34 @@ body {
   background-image: url(img/geometric-leaves.webp);
 }
 
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: lightskyblue;
+  border-bottom: 3px solid antiquewhite;
+  z-index: 9999;
+}
+
 .container {
   width: 960px;
-  margin: auto;
+  margin: 80px auto;
   background-color: #fff;
+  position: relative;
+}
+
+.twitter {
+  width: 200px;
+  height: 200px;
+  background-image: url(img/x\ logo.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  position: absolute;
+  top: -23px;
+  right: -28px;
 }
 
 .header {
@@ -247,20 +271,4 @@ body {
 
 .cf:after {
   clear: both;
-}
-
-.content p {
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.footer {
-  background-color: #333;
-  padding: 20px;
-}
-
-.footer .copy {
-  color: #eaeaea;
-  text-align: center;
-  font-size: 12px;
 }
